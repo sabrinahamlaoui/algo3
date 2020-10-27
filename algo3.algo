@@ -1,0 +1,24 @@
+PROCEDURE dot_product(T1,T2: ARRAY_OF INTEGER);
+VAR
+    i : INTEGER;
+    ps: INTEGER :=0;
+BEGIN
+    FOR i FROM i=0 TO T1,T2.length STEP i++ DO;
+    FOR i FROM i=0 TO ps.length STEP i++ DO;
+    ps:= ps + T1[i]*T2[i];
+    return ps;
+    END_FOR;
+    END_FOR;
+    
+END
+
+ALGORITHM produit_de_vecteur
+VAR
+    v1, v2 : ARRAY_OF INTEGER ;
+    i,ps: INTEGER :=0 ;
+
+BEGIN
+    // read(v1, v2)
+    dot_product(v1,v2,i,ps);
+    write ("le produit des vecteurs est", ps);
+END
